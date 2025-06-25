@@ -16,3 +16,8 @@ function router (){
 const fn =router()
 fn()
 fn()
+
+//arrow function 
+
+const add = ()=>a+b;
+console.log(add(12))
