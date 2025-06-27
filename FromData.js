@@ -1,29 +1,26 @@
-import React from 'react';
+import React from "react";
 
-const FromData = () => {
-    
-      const handleSubmit (e) =>{
-        e.preventDefault();
-        
-        const name = e.target.name.value;
-        const email = e.target.email.value;
-        const password = e.target.password.vale;
-        console.log(name, email, password)
-    
+const FormData = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-      }
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
 
-    return (
-        <div>
-            <form>
-             <input type="text" name="name" placeholder="Your Name" required /><br />
-             <input type="text" name="email" placeholder="Your email" required /><br />
-             <input type="text" name="password" placeholder="password" required /><br />
-             
-            </form>
+    console.log(name, email, password);
+  };
 
-        </div>
-    );
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        <input type="text" name="name" placeholder="Your Name" required /><br />
+        <input type="email" name="email" placeholder="Your Email" required /><br />
+        <input type="password" name="password" placeholder="Password" required /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
 };
 
-export default FromData;
+export default FormData;
