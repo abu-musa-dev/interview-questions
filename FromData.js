@@ -11,6 +11,9 @@ const FormData = () => {
     console.log(name, email, password);
   };
 
+  //git add this services
+  
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
