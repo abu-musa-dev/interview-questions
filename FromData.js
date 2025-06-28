@@ -12,7 +12,7 @@ const FormData = () => {
   };
 
   //git add this services
-  
+
 
   return (
     <div>
@@ -20,6 +20,7 @@ const FormData = () => {
         <input type="text" name="name" placeholder="Your Name" required /><br />
         <input type="email" name="email" placeholder="Your Email" required /><br />
         <input type="password" name="password" placeholder="Password" required /><br />
+        <button type="submit">Submit</button>
         <button type="submit">Submit</button>
       </form>
     </div>
